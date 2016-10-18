@@ -1,0 +1,23 @@
+{
+  "name": "twitter_bot",
+  "version": "1.0.0",
+  "description": "twitter bot that makes calculations for whoever asks",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotsofpieces/twitter_bot.git"
+  },
+  "author": "Otávio Pace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lotsofpieces/twitter_bot/issues"
+  },
+  "homepage": "https://github.com/lotsofpieces/twitter_bot#readme",
+  "dependencies": {
+    "twit": "^2.2.5"
+  }
+}
