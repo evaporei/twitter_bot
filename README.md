@@ -1,2 +1,2 @@
-I am a readme
-test
+#Twitter Bot
+This is a twitter bot that everytime someone makes a tweet mentioning it with a math expression like(@DoMyMathBot 3 * (5 + 1)) it will answer it. It still has some bugs that need to be fixed and it is hosted at heroku.
