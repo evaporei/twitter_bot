@@ -28,15 +28,16 @@ function tweetEvent(eventMsg) {
 		}
 
 		if (!text.match(/\d+/)) {
-      postTweet('I am sorry @' + userFrom + ', but this tweet does not contain numbers :(')
+      postTweet(`I am sorry @${userFrom}, but this tweet does not contain numbers :(`)
 		} else {
 			text = text.replace('@DoMyMathBot', ')
 
 			try {
 				let result = eval(text)//can do errors, so it will go to the catch part
-				postTweet('Hi, @' + userFrom + '! Here is your result ', result)
+        postTweet(`Hi, @${userFrom}! Here is your result ${result}`)
+
 			} catch (error) {
-				postTweet('Hi, @' + userFrom + '! Can you check the expression? Look at my profile to see how to get a result')
+        postTweet(`Hi, @${userFrom}! Can you check the expression? Look at my profile to see how to get a result`)
 			}
     }
 
@@ -51,7 +52,7 @@ function postTweet(tweetText, res) {
 	//the same thing over and over again
 	if (tweetText === lastTweetBot) {
 		n++
-		tweetText = 'The result was the same as the last one(' + res + '). Times it happened: ' + n
+		tweetText = `The result was the same as the last one(${res}). Times it happened: ${n}`
 	} else {
 		tweetText = tweetText + res
 	}
